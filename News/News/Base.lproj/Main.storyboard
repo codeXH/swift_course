@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hdi-Q0-RMC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--新闻-->
+        <scene sceneID="eTm-g3-t4Z">
+            <objects>
+                <tableViewController id="3ZY-eQ-fXn" customClass="NWNesTableViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GCG-ZR-gTG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <scrollView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="L3X-AY-0fF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="3ZY-eQ-fXn" id="IvD-om-t3f"/>
+                            </connections>
+                        </scrollView>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Dpe-R7-pSa">
+                            <rect key="frame" x="0.0" y="483" width="375" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="Avd-3B-n84">
+                                <rect key="frame" x="0.0" y="403" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Avd-3B-n84" id="PFR-xx-qc4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J8L-Y5-2lD">
+                                            <rect key="frame" x="15" y="15" width="80" height="49.5"/>
+                                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="bse-s3-IG8"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1600只纸熊猫环游世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x4-UM-8KY">
+                                            <rect key="frame" x="110" y="15" width="250" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="110396" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZB-ur-kwi">
+                                            <rect key="frame" x="110" y="41" width="45" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010跟帖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huR-aC-7TB">
+                                            <rect key="frame" x="300.5" y="58.5" width="59.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="J8L-Y5-2lD" secondAttribute="bottom" constant="15" id="1zP-Ee-0e1"/>
+                                        <constraint firstItem="3x4-UM-8KY" firstAttribute="top" secondItem="PFR-xx-qc4" secondAttribute="top" constant="15" id="FpZ-xr-4Nq"/>
+                                        <constraint firstAttribute="trailing" secondItem="huR-aC-7TB" secondAttribute="trailing" constant="15" id="HLE-AV-MUA"/>
+                                        <constraint firstAttribute="trailing" secondItem="3x4-UM-8KY" secondAttribute="trailing" constant="15" id="N58-yB-Gxu"/>
+                                        <constraint firstAttribute="bottom" secondItem="huR-aC-7TB" secondAttribute="bottom" constant="5" id="Raa-YN-HXC"/>
+                                        <constraint firstItem="NZB-ur-kwi" firstAttribute="leading" secondItem="J8L-Y5-2lD" secondAttribute="trailing" constant="15" id="b3U-m1-qkV"/>
+                                        <constraint firstItem="3x4-UM-8KY" firstAttribute="leading" secondItem="J8L-Y5-2lD" secondAttribute="trailing" constant="15" id="bL7-DS-59S"/>
+                                        <constraint firstItem="J8L-Y5-2lD" firstAttribute="leading" secondItem="PFR-xx-qc4" secondAttribute="leading" constant="15" id="eKr-tV-Vkc"/>
+                                        <constraint firstItem="J8L-Y5-2lD" firstAttribute="top" secondItem="PFR-xx-qc4" secondAttribute="top" constant="15" id="gKY-sO-9Cr"/>
+                                        <constraint firstItem="NZB-ur-kwi" firstAttribute="top" secondItem="3x4-UM-8KY" secondAttribute="bottom" constant="5" id="vhV-aN-Fey"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3ZY-eQ-fXn" id="gN3-4N-Mgw"/>
+                            <outlet property="delegate" destination="3ZY-eQ-fXn" id="lg2-Uy-3IV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="新闻" id="I0b-a6-GBF"/>
+                    <connections>
+                        <outlet property="scrView" destination="L3X-AY-0fF" id="NvK-7f-dRJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0b-QH-VFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="147"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lEh-eD-3QS">
+            <objects>
+                <navigationController id="hdi-Q0-RMC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HZI-od-Bpl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3ZY-eQ-fXn" kind="relationship" relationship="rootViewController" id="2I5-PS-huL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRM-Ak-VX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="153"/>
+        </scene>
+    </scenes>
+</document>
