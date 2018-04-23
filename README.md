@@ -9,3 +9,5 @@ learning swift
 
 4: Sky: MVVM+OOP+UnitTest+Location+Search+UserDefault
 
+5: Rock: Document文件夹及下目录 + 随机数
+

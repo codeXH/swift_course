@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FwU-9A-rAR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rock-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doraemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83z-9g-v1g">
+                                <rect key="frame" x="147.5" y="84" width="80" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aok-Uy-G4r">
+                                <rect key="frame" x="123" y="112" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8UT-op-Z25"/>
+                                    <constraint firstAttribute="width" constant="128" id="tG6-AH-HBx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-G1-lev">
+                                <rect key="frame" x="172" y="270" width="31" height="30"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="didClickOnStartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNU-Bc-WWa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dml-n4-1mY">
+                                <rect key="frame" x="123" y="330" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0g8-yB-jth"/>
+                                    <constraint firstAttribute="width" constant="128" id="LZZ-2y-lJm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="POJ-G1-lev" firstAttribute="top" secondItem="Aok-Uy-G4r" secondAttribute="bottom" constant="30" id="2D7-0j-DtP"/>
+                            <constraint firstItem="Dml-n4-1mY" firstAttribute="top" secondItem="POJ-G1-lev" secondAttribute="bottom" constant="30" id="3eV-Hl-5Wr"/>
+                            <constraint firstItem="Aok-Uy-G4r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dh8-mQ-U4d"/>
+                            <constraint firstItem="83z-9g-v1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QtL-nJ-eo7"/>
+                            <constraint firstItem="83z-9g-v1g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Szj-a0-O7G"/>
+                            <constraint firstItem="Aok-Uy-G4r" firstAttribute="top" secondItem="83z-9g-v1g" secondAttribute="bottom" constant="8" id="gIY-9g-rcG"/>
+                            <constraint firstItem="POJ-G1-lev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vh1-Yv-IzC"/>
+                            <constraint firstItem="Dml-n4-1mY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wty-ja-Jsf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rock" id="v7D-8R-iyu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fZg-Mh-Ctb">
+                            <connections>
+                                <segue destination="7Fw-34-Ahm" kind="show" id="MBs-Kp-kqd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doraemonImageView" destination="Aok-Uy-G4r" id="wpU-1M-XiQ"/>
+                        <outlet property="myImageVIew" destination="Dml-n4-1mY" id="HS7-7t-HdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="179"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="nUs-hv-0qg">
+            <objects>
+                <viewController id="7Fw-34-Ahm" customClass="AboutViewController" customModule="Rock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="461-nq-Ug5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-lX-oTr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X9b-lX-oTr" firstAttribute="top" secondItem="OD3-Rc-BaM" secondAttribute="top" id="2Tg-ze-z14"/>
+                            <constraint firstItem="OD3-Rc-BaM" firstAttribute="bottom" secondItem="X9b-lX-oTr" secondAttribute="bottom" id="6BF-Ug-fBh"/>
+                            <constraint firstItem="X9b-lX-oTr" firstAttribute="leading" secondItem="461-nq-Ug5" secondAttribute="leading" id="f4i-wM-HYV"/>
+                            <constraint firstItem="OD3-Rc-BaM" firstAttribute="trailing" secondItem="X9b-lX-oTr" secondAttribute="trailing" id="tFo-mq-QK9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OD3-Rc-BaM"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="X9b-lX-oTr" id="abQ-7l-8sA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmt-cn-Vct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="179"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zNx-vj-wpb">
+            <objects>
+                <navigationController id="FwU-9A-rAR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nQX-Ge-bLP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hON-7H-XPj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6F-na-7aq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="180"/>
+        </scene>
+    </scenes>
+</document>
